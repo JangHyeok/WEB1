@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>배추돌이</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="{{url_for('static', filename='css/mdb.min.css')}}" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="{{url_for('static', filename='css/style.min.css')}}" rel="stylesheet">
+  <!-- 나눔 바른 고딕 웹 폰트 적용하기 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css">
+  <style type="text/css">
+
+    html,
+    body,
+    header,
+    .carousel {
+      height: 100%;
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #1C2331!important;
+            }
+        }
+
+    .hangul {
+        font-family: 'Nanum Barun Gothic' !important;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#" target="_blank">
+        <strong class="hangul">배추돌이</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="">메인
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          　
+          <li class="nav-item active">
+            <a class="nav-link" href=/templates/index.html>팀원 소개
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          　
+          <li class="nav-item active">
+            <a class="nav-link" href=#linkB>프로젝트 소개
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://github.com/JangHyeok/Bigdata_Solution" class="nav-link border border-light rounded"
+              target="_blank">
+              <i class="fa fa-github mr-2"></i>GitHub
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+            <source src='\static\img\video.mp4' type="video/mp4">
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong style="font-family: 'Nanum Barun Gothic'">빅데이터 배추 예측</strong>
+                <p>
+                </h1>
+
+              <p>
+                <strong style="font-family: 'Nanum Barun Gothic'">기상정보 등 여러가지 데이터를 분석하여 배추의 가격과 생산량을 예측합니다.</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <p>──────────────────────</P>
+                <strong>경북대학교 종합설계 프로젝트2 8팀[ITEC402003]</strong>
+                <p>
+                  <strong>경북대학교 소프트웨어 융합프로젝트[COMP600001]</strong>
+                  <p>강석민 김동빈 김보성 장윤진 장혁 허은희
+
+
+              </p>
+
+              <a target="_blank" href=#linkC class="btn btn-outline-white btn-lg">예측 시작하기 →
+                <i class="fa fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div><a name='linkA'></a>
+          <!-- Mask & flexbox options-->
+        </div>
+      </div>
+      <!--/First slide-->
+
+      </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!--Main layout-->
+  <main>
+    <div class="container">
+
+      <!--Section: Main info-->
+      <section class="mt-5 wow fadeIn">
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-15 mb-4">
+            <!-- Main heading -->
+            <h3 class="h3 mb-3" style="font-family: 'Nanum Barun Gothic'">팀원 소개</h3>
+            <p></p>
+            <!-- Main heading -->
+            <img src="{{url_for('static', filename='img/team.png')}}" class="img-fluid z-depth-1-half" alt="">
+
+          </div>
+
+        </div>
+        <!--Grid row-->
+                    <a name='linkB'></a>
+      </section>
+      <!--Section: Main info-->
+
+      <hr class="my-5"> <!--줄--->
+
+      <!--Section: Main info-->
+      <section class="mt-5 wow fadeIn">
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-15 mb-4">
+
+
+
+            <!-- Main heading -->
+
+
+            <h3 class="h3 mb-3" style="font-family: 'Nanum Barun Gothic'">프로젝트 소개</h3>
+
+            <div class="col-md-15 mb-4">
+
+            <img src="{{url_for('static', filename='img/bigdata.jpg')}}" class="img-fluid z-depth-1-half" alt="">
+
+            </div>
+
+
+            <p style="font-family: 'Nanum Barun Gothic'">머신 러닝 선형 회귀(Linear Regression) 모델을 확장하여 시계열에 따른 배추 가격을 예측하고 학습 결과를 확인했습니다.
+              <strong style="font-family: 'Nanum Barun Gothic'">미래</strong>의 배추 가격을 효과적으로 예측할 수 있습니다. </p>
+            <p></p>
+            <!-- Main heading -->
+            <!-- CTA -->
+            <a target="_blank" href="https://github.com/JangHyeok/Bigdata_Solution"
+              style="font-family: 'Nanum Barun Gothic'" class="btn btn-grey btn-md">프로젝트 ppt 다운로드
+              <i class="fa fa-download ml-1">
+            </a>
+</i><a name='linkC'></a>
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </section>
+      <!--Section: Main info-->
+
+      <hr> <!--줄--->
+　
+      <!--Section: Main features & Quick Start-->
+      <section>
+
+        <h3 class="h3 text-center mb-5" style="font-family: 'Nanum Barun Gothic'">선형회귀 방식을 통한 배추가격 예측해보기</h3>
+
+        <!--Grid row-->
+
+
+          <!--Grid column-->
+          <div class="col-lg-12 col-md-12 px-5">
+
+            <form action="/" method="post">
+              <!-- Default form group -->
+
+                  <!-- Default input -->
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">평균 온도</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="avg_temp" class="form-control" id="formGroupExampleInput" placeholder="평균 온도를 입력하세요.">
+                  </div>
+                  <!-- Default input -->
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">최소 온도</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="min_temp" class="form-control" id="formGroupExampleInput" placeholder="최소 온도를 입력하세요.">
+                  </div>
+                  <!-- Default input -->
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">최대 온도</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="max_temp" class="form-control" id="formGroupExampleInput" placeholder="최대 온도를 입력하세요.">
+                  </div>
+                  <!-- Default input -->
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">강수량</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="rain_fall" class="form-control" id="formGroupExampleInput" placeholder="강수량을 입력하세요.">
+                  </div>
+                  <a>　</a>
+              <!-- Default form group -->
+              <h3 class="h3 text-center mb-5" style="font-family: 'Nanum Barun Gothic'"><button style="font-family: 'Nanum Barun Gothic' !important;" type="submit" class="btn btn-primary btn-md">선형회귀 예측하기</button></h3>
+            </form>
+          </div>
+          <!--/Grid column-->
+          <!--Grid column-->
+          {% if price %}
+          <div>
+<p class="h5 text-center mb-4" style="font-family: 'Nanum Barun Gothic'">선형회귀 분석 예측 결과</p>
+              <h5 class="text-center mt-3"><font color="red"><B>예측된 가격은 {{ price }}원입니다.</B></font></h5>
+          </div>
+          <a>　</a>
+            {% endif %}
+          <!--/Grid column-->
+
+
+        <!--/Grid row-->
+
+
+
+      </section>
+      <!--Section: Main features & Quick Start-->
+
+
+
+    </div>
+
+
+      <hr> <!--줄--->
+    <!--아리마-->
+ 　
+    <!--Section: Main features & Quick Start-->
+    <section>
+    <a name='linkD'></a>
+
+      <h3 class="h3 text-center mb-4" style="font-family: 'Nanum Barun Gothic'">시계열 방식을 통한 배추가격 예측해보기</h3>
+      <!--Grid row-->
+
+      <div class="text-center mt-3">
+
+      <img src="{{url_for('static', filename='ARIMA/forecast.jpeg')}}" width=1000px class="img-fluid z-depth-1-half " alt="">
+
+      </div>
+<p></p>
+        <!--Grid column-->
+      <form action="/arima" method="post">
+        <h3 class="h3 text-center mb-5" style="font-family: 'Nanum Barun Gothic'"><button style="font-family: 'Nanum Barun Gothic' !important;" type="submit" class="btn btn-primary btn-md">시계열 예측하기</button></h3>
+    </form>
+
+
+      {% if price1 %}
+        <div class="col-lg-12 col-md-12">
+          <p class="h5 text-center mb-4" style="font-family: 'Nanum Barun Gothic'">시계열 분석 예측 결과</p>
+          <font color="red"><h5 class="text-center mt-3"><B>{{ timenow }}기준</B></h5>
+          <h6 class="text-center mt-3">배추의 1일 후 예측 가격은 {{ price1 }}원</h6>
+          <h6 class="text-center mt-3">배추의 2일 후 예측 가격은 {{ price2 }}원</h6>
+          <h6 class="text-center mt-3">배추의 3일 후 예측 가격은 {{ price3 }}원</h6>
+          <h6 class="text-center mt-3">배추의 4일 후 예측 가격은 {{ price4 }}원</h6>
+          <h6 class="text-center mt-3">배추의 5일 후 예측 가격은 {{ price5 }}원</h6>
+          <h6 class="text-center mt-3">배추의 6일 후 예측 가격은 {{ price6 }}원</h6>
+          <h6 class="text-center mt-3">배추의 7일 후 예측 가격은 {{ price7 }}원</h56>
+          <h5 class="text-center mt-3">입니다.</h5></font>
+          {% endif %}
+        </div>
+        <!--/Grid column-->
+
+      <!--/Grid row-->
+
+
+
+    </section>
+    <!--Section: Main features & Quick Start-->
+
+
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <!--Call to action-->
+    <div class="pt-4">
+      <a class="btn btn-outline-white" href="https://github.com/JangHyeok/Bigdata_Solution" target="_blank" role="button">8팀 Git Hub
+        <i class="fa fa-graduation-cap ml-2"></i>
+      </a>
+    </div>
+    <!--/.Call to action-->
+
+<a>　</a>
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 경북대학교 종합설계 프로젝트 8팀[ITEC402003]<p>
+        © 경북대학교 소프트웨어 융합프로젝트[COMP600001]<p>
+        <p>
+      <a href="https://github.com/JangHyeok/Bigdata_Solution" target="_blank">강석민 김동빈 김보성 장윤진 장혁 허은희</a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{{url_for('static', filename='js/mdb.min.js')}}"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>

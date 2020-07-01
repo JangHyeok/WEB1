@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>요리 어때</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="{{url_for('static', filename='css/mdb.min.css')}}" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="{{url_for('static', filename='css/style.min.css')}}" rel="stylesheet">
+  <!-- 나눔 바른 고딕 웹 폰트 적용하기 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css">
+  <style type="text/css">
+
+    html,
+    body,
+    header,
+    .carousel {
+      height: 100%;
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #1C2331!important;
+            }
+        }
+
+    .hangul {
+        font-family: 'Nanum Barun Gothic' !important;
+    }
+
+    * {
+    margin:0;
+    padding:0;
+    border:0;
+    text-decoration:none;
+    letter-spacing:0px;
+}
+.menubar
+{
+    width:1145px;
+    margin: 0 auto;
+    border:none;
+    background: #F7313E;
+    overflow: hidden;
+}
+
+.menuLogo
+{
+    width:180px;
+    float:left;
+}
+
+.menuItem
+{
+    float:right;
+}
+
+.menubar ul
+{
+    background: #F7313E;
+    height:50px;
+    list-style:none;
+}
+
+.menubar li
+{
+    float:left;
+}
+
+.menubar a
+{
+    color:#FFFFFF;
+    display:block;
+    font-weight:normal;
+    line-height:49px;
+    padding:1px 25px;
+    text-align:center;
+}
+
+.menubar li a:hover,
+.menubar ul li:hover a {
+    background: #636363;
+    color:#FFFFFF;
+}
+
+.menubar li:hover ul
+{
+    display:block;
+}
+
+.menubar li:hover li a
+{
+    background:none;
+}
+
+.menubar li ul
+{
+    background: #F7313E;
+    display:none;
+    height:auto;
+    position:absolute;
+    z-index:999;
+}
+
+.menubar li li a ,
+.menubar li li
+{
+    background: #F7313E;
+    display:block;
+    float:none;
+    min-width:135px;
+}
+
+.menubar li ul a
+{
+    display:block;
+    height:50px;
+    font-size:12px;
+    font-style:normal;
+    padding:0px 10px 0px 15px;
+    text-align:left;
+}
+
+.menubar li ul a:hover,
+.menubar li ul li:hover a{
+    background: #636363;
+    border:0px;
+    color:#ffffff;
+}
+
+.footer
+{
+    width:1140px;
+    margin: 0 auto;
+    border:none;
+    background: #E6E6E6;
+    overflow: hidden;
+    text-align:center;
+    font-weight:normal;
+}
+
+.section
+{
+    width:1140px;
+    margin:auto;
+    border:auto;
+    overflow: hidden;
+    text-align:center;
+}
+
+.absolute{
+  position: absolute;
+}
+
+img.logo {
+  position: relative;
+  left: -440px;
+}
+
+.top
+{
+    width:1140px;
+    margin: 0 auto;
+    border:none;
+    overflow: hidden;
+    text-align:center;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <!-- Navbar -->
+
+  <!--Carousel Wrapper-->
+
+  <!--/.Carousel Wrapper-->
+
+  <!--Main layout-->
+
+
+
+    <div class="container">
+      <header>
+      <div class="top">
+      <a href="http://localhost:8080/BBS/main.jsp"><img src="static/img/logo.png" width=256px class="logo">
+      </div>
+          <div class="menubar">
+              <ul class="menuItem">
+                <li><a href="http://localhost:8080/BBS/bbs.jsp">레시피 게시판</a></li>
+
+<li><a href="http://localhost:8080/BBS/bbs1.jsp">공지 게시판</a></li>
+
+<li><a href="http://localhost:8080/BBS/bbs2.jsp">자유 게시판</a></li>
+
+<li><a href="http://localhost:8080/BBS/bbs3.jsp">질문 게시판</a></li>
+
+<li><a href="http://localhost:8080/BBS/bbs4.jsp">중고거래 게시판</a></li>
+
+<li><a href="#">배추가격 예측</a></li>
+              </ul>
+          </div>
+      </header>
+      <!--Section: Main info-->
+
+      <!--Section: Main info-->
+
+      <!--Section: Main info-->
+
+      <!--Section: Main info-->
+　
+      <!--Section: Main features & Quick Start-->
+      <section>
+        <a name='linkA1'></a>
+        <h3 class="h3 text-center mb-4" style="font-family: 'Nanum Barun Gothic'">선형회귀 방식을 통해 배추가격 예측해보기</h3>
+        <h3 class="h3 text-center mb-4" style="font-family: 'Nanum Barun Gothic'"><font color="blue">(파이썬 tensorFlow)</font></h3>
+
+        <!--Grid row-->
+
+        <div class="text-center mt-3">
+
+        <img src="{{url_for('static', filename='img/linear1.png')}}" width=800px class="img-fluid z-depth-1-half " alt="">
+        <p></p>
+        <p style="font-family: 'Nanum Barun Gothic'">선형 회귀(線型回歸, 영어: linear regression)는 종속 변수 y와 한 개 이상의 독립 변수(또는 설명 변수) X와의 선형 상관 관계를 모델링하는 회귀분석 기법이며</p>
+        <p style="font-family: 'Nanum Barun Gothic'">Python의 TensorFlow 선형회귀 라이브러리를 통해 구현하였습니다.</p>
+        <p style="font-family: 'Nanum Barun Gothic'">아래의 변수값에 원하는 날짜의 예상 기상정보를 입력 후 예측하기 버튼을 누르면 해당 날짜의 배추가격을 예측합니다.
+          </p>
+
+        </div>
+          <!--Grid column-->
+          <div class="col-lg-12 col-md-12 px-5">
+
+
+            <form action="/" method="post">
+              <!-- Default form group -->
+
+
+                  <!-- Default input -->
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">평균기온(°C)</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="avg_temper" class="form-control" id="formGroupExampleInput" placeholder="평균기온(°C)을 입력하세요.">
+                  </div>
+                  <!-- Default input -->
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">최저기온(°C)</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="low_temper" class="form-control" id="formGroupExampleInput" placeholder="최저기온(°C)을 입력하세요.">
+                  </div>
+                  <!-- Default input -->
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">최고기온(°C)</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="high_temper" class="form-control" id="formGroupExampleInput" placeholder="최고기온(°C)을 입력하세요.">
+                  </div>
+                  <!-- Default input -->
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">일강수량(mm)</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="rainfall" class="form-control" id="formGroupExampleInput" placeholder="일강수량(mm)을 입력하세요.">
+                  </div>
+
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">평균 풍속(m/s)</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="avg_ws" class="form-control" id="formGroupExampleInput" placeholder="평균 풍속(m/s)을 입력하세요.">
+                  </div>
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">평균 상대습도(%)</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="avg_rehumi" class="form-control" id="formGroupExampleInput" placeholder="평균 상대습도(%)를 입력하세요.">
+                  </div>
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">합계 일조시간(hr)</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="total_sunhine" class="form-control" id="formGroupExampleInput" placeholder="계 일조시간(hr)을 입력하세요.">
+                  </div>
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">합계 일사량(MJ/m2)</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="total_sunradi" class="form-control" id="formGroupExampleInput" placeholder="합계 일사량(MJ/m2)을 입력하세요.">
+                  </div>
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">평균 지면온도(°C)</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="avg_landtemper" class="form-control" id="formGroupExampleInput" placeholder="평균 지면온도(°C)를 입력하세요.">
+                  </div>
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">최저 초상온도(°C)</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="low_grasstemper" class="form-control" id="formGroupExampleInput" placeholder="최저 초상온도(°C)를 입력하세요.">
+                  </div>
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">0.5M 평균 습도(%)</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="avg_humid" class="form-control" id="formGroupExampleInput" placeholder="0.5M 평균 습도(%)를 입력하세요.">
+                  </div>
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">10CM 일 토양수분(%)</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="day_soilwater" class="form-control" id="formGroupExampleInput" placeholder="10CM 일 토양수분(%)을 입력하세요.">
+                  </div>
+                  <div class="text-center mt-3">
+                      <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">CPI</label>
+                      <input style="font-family: 'Nanum Barun Gothic'" type="text" name="CPI" class="form-control" id="formGroupExampleInput" placeholder="CPI를 입력하세요.">
+                  </div>
+                  <a>　</a>
+              <!-- Default form group -->
+              <h3 class="h3 text-center mb-5" style="font-family: 'Nanum Barun Gothic'"><button style="font-family: 'Nanum Barun Gothic' !important;" type="submit" class="btn btn-primary btn-md">예측하기</button></h3>
+            </form>
+          </div>
+          <!--/Grid column-->
+          <!--Grid column-->
+          {% if price %}
+          <div>
+<p class="h5 text-center mb-4" style="font-family: 'Nanum Barun Gothic'">선형회귀 분석 예측 결과</p>
+              <h5 class="text-center mt-3"><font color="red"><B>예측된 가격은 {{ price }}원입니다.</B></font></h5>
+          </div>
+          <a>　</a>
+            {% endif %}
+          <!--/Grid column-->
+
+
+        <!--/Grid row-->
+
+
+
+      </section>
+      <!--Section: Main features & Quick Start-->
+
+
+
+    </div>
+
+<a name='linkA2'></a>
+      <hr> <!--줄--->
+    <!--아리마-->
+ 　
+    <!--Section: Main features & Quick Start-->
+    <section>
+    <a name='linkD'></a>
+      <h3 class="h3 text-center mb-4" style="font-family: 'Nanum Barun Gothic'">시계열 ARIMA 모델을 통해 배추가격 예측해보기</h3>
+      <h3 class="h3 text-center mb-4" style="font-family: 'Nanum Barun Gothic'"><font color="blue">(파이썬 tensorFlow)</font></h3>
+      <!--Grid row-->
+
+      <div class="text-center mt-3">
+
+      <img src="{{url_for('static', filename='ARIMA/forecast.jpeg')}}" width=1000px class="img-fluid z-depth-1-half " alt="">
+      <p></p>
+      <p style="font-family: 'Nanum Barun Gothic'">시계열 ARIMA(Autoregression Integrated Moving Average) 모델은 과거 지식이나 경험을 바탕으로 일정한 규칙적인 패턴을 학습하는 모델이며</p>
+        <p style="font-family: 'Nanum Barun Gothic'">Python의 TensorFlow ARIMA 라이브러리를 통해 구현하였습니다. 아래의 예측하기 버튼을 누르면 향 후 30일간의 배추가격을 예측합니다.
+      </p>
+
+      </div>
+<p></p>
+        <!--Grid column-->
+      <form action="/arima" method="post">
+        <h3 class="h3 text-center mb-5" style="font-family: 'Nanum Barun Gothic'"><button style="font-family: 'Nanum Barun Gothic' !important;" type="submit" class="btn btn-primary btn-md">예측하기</button></h3>
+    </form>
+
+
+      {% if price1 %}
+        <div class="col-lg-12 col-md-12">
+          <p class="h5 text-center mb-4" style="font-family: 'Nanum Barun Gothic'">시계열 ARIMA 분석 예측 결과</p>
+          <font color="red"><h5 class="text-center mt-3"><B>{{ timenow }}기준</B></h5>
+          <h6 class="text-center mt-3">배추의 1일 후 예측 가격은 {{ price1 }}원</h6>
+          <h6 class="text-center mt-3">배추의 2일 후 예측 가격은 {{ price2 }}원</h6>
+          <h6 class="text-center mt-3">배추의 3일 후 예측 가격은 {{ price3 }}원</h6>
+          <h6 class="text-center mt-3">배추의 4일 후 예측 가격은 {{ price4 }}원</h6>
+          <h6 class="text-center mt-3">배추의 5일 후 예측 가격은 {{ price5 }}원</h6>
+          <h6 class="text-center mt-3">배추의 6일 후 예측 가격은 {{ price6 }}원</h6>
+          <h6 class="text-center mt-3">배추의 7일 후 예측 가격은 {{ price7 }}원</h6>
+          <h6 class="text-center mt-3">배추의 8일 후 예측 가격은 {{ price8 }}원</h6>
+          <h6 class="text-center mt-3">배추의 9일 후 예측 가격은 {{ price9 }}원</h6>
+          <h6 class="text-center mt-3">배추의 10일 후 예측 가격은 {{ price10 }}원</h6>
+          <h6 class="text-center mt-3">배추의 11일 후 예측 가격은 {{ price11 }}원</h6>
+          <h6 class="text-center mt-3">배추의 12일 후 예측 가격은 {{ price12 }}원</h6>
+          <h6 class="text-center mt-3">배추의 13일 후 예측 가격은 {{ price13 }}원</h6>
+          <h6 class="text-center mt-3">배추의 14일 후 예측 가격은 {{ price14 }}원</h6>
+          <h6 class="text-center mt-3">배추의 15일 후 예측 가격은 {{ price15 }}원</h6>
+          <h6 class="text-center mt-3">배추의 16일 후 예측 가격은 {{ price16 }}원</h6>
+          <h6 class="text-center mt-3">배추의 17일 후 예측 가격은 {{ price17 }}원</h6>
+          <h6 class="text-center mt-3">배추의 18일 후 예측 가격은 {{ price18 }}원</h6>
+          <h6 class="text-center mt-3">배추의 19일 후 예측 가격은 {{ price19 }}원</h6>
+          <h6 class="text-center mt-3">배추의 20일 후 예측 가격은 {{ price20 }}원</h6>
+          <h6 class="text-center mt-3">배추의 21일 후 예측 가격은 {{ price21 }}원</h6>
+          <h6 class="text-center mt-3">배추의 22일 후 예측 가격은 {{ price22 }}원</h6>
+          <h6 class="text-center mt-3">배추의 23일 후 예측 가격은 {{ price23 }}원</h6>
+          <h6 class="text-center mt-3">배추의 24일 후 예측 가격은 {{ price24 }}원</h6>
+          <h6 class="text-center mt-3">배추의 25일 후 예측 가격은 {{ price25 }}원</h6>
+          <h6 class="text-center mt-3">배추의 26일 후 예측 가격은 {{ price26 }}원</h6>
+          <h6 class="text-center mt-3">배추의 27일 후 예측 가격은 {{ price27 }}원</h6>
+          <h6 class="text-center mt-3">배추의 28일 후 예측 가격은 {{ price28 }}원</h6>
+          <h6 class="text-center mt-3">배추의 29일 후 예측 가격은 {{ price29 }}원</h6>
+          <h6 class="text-center mt-3">배추의 30일 후 예측 가격은 {{ price30 }}원</h6>
+          <h5 class="text-center mt-3">입니다.</h5>
+
+        </font>
+
+          {% endif %}
+        </div>
+        <!--/Grid column-->
+
+      <!--/Grid row-->
+
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{{url_for('static', filename='js/mdb.min.js')}}"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+
+  <footer class="footer">
+     <b>
+      <div class="item">2020-1 : 고급웹프로그래밍[ITEC416004] 3팀</div>
+     <div class="item">&copy;2013105086 장혁, 2017115112 김보성</div>
+     </b>
+   </footer>
+
+</body>
+
+</html>
