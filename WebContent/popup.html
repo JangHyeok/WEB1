@@ -1,0 +1,29 @@
+<html>
+<head>
+ <title>popup</title>
+<SCRIPT language="JavaScript">
+
+function setCookie( name, value, expiredays ) {
+ var todayDate = new Date();
+  todayDate.setDate( todayDate.getDate() + expiredays );
+  document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+}
+function closeWin() {
+ if ( document.forms[0].Notice.checked )
+   setCookie( "Notice", "done" , 1);
+  self.close();
+}
+
+</SCRIPT>
+</head>
+
+<body>
+요리어때의 접속을 환영합니다!
+<br>
+<img src="images/popup.jpg">
+<form>
+<br>
+<input type=CHECKBOX name="Notice" value="">다음 접속 시 팝업 보지 않기 <input type="button" name="button" value="닫기" onclick=closeWin()>
+</form>
+</body>
+</html>
